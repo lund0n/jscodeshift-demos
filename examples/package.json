@@ -1,0 +1,37 @@
+{
+  "name": "examples",
+  "version": "0.0.0",
+  "description": "Example code to try transforms on",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lund0n/jscodeshift-demos.git",
+    "directory": "examples"
+  },
+  "bugs": "https://github.com/lund0n/jscodeshift-demos/issues",
+  "keywords": [
+    "demos",
+    "jscodeshift"
+  ],
+  "author": "Jeremy Lund <jeremy.r.lund@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "transform": "jscodeshift -d -p",
+    "example-1": "pnpm transform -- -t ../packages/transforms/src/id-rename.ts src/greeting.js",
+    "example-2": "pnpm transform -- -t ../packages/transforms/src/multiple-id-rename.ts src/multiple-fns.js",
+    "example-3": "pnpm transform -- -t ../packages/transforms/src/rename-function-id.ts src/multiple-fns.js",
+    "example-4": "pnpm transform -- -t ../packages/transforms/src/import-rename.ts src/imports.js",
+    "example-5": "pnpm transform -- -t ../packages/transforms/src/brace-yourselves.ts src/decisions.js",
+    "example-6": "pnpm transform -- -t https://raw.githubusercontent.com/lund0n/jscodeshift-examples/master/transforms/brace-yourselves.js src/decisions.js",
+    "format": "prettier --ignore-unknown --write ."
+  },
+  "peerDependencies": {
+    "prettier": ">= 2 < 3"
+  },
+  "devDependencies": {
+    "jscodeshift": "^0.14.0",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "prettier-config": "workspace:*"
+  },
+  "prettier": "prettier-config"
+}

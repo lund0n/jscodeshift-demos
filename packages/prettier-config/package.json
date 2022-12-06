@@ -1,0 +1,27 @@
+{
+  "name": "prettier-config",
+  "version": "0.0.0",
+  "description": "Prettier config",
+  "main": ".prettierrc.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lund0n/jscodeshift-demos.git",
+    "directory": "packages/prettier-config"
+  },
+  "bugs": "https://github.com/lund0n/jscodeshift-demos/issues",
+  "keywords": [
+    "prettier"
+  ],
+  "author": "Jeremy Lund <jeremy.r.lund@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --ignore-unknown --write ."
+  },
+  "peerDependencies": {
+    "prettier": ">= 2 < 3"
+  },
+  "devDependencies": {
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0"
+  }
+}

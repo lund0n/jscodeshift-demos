@@ -1,0 +1,30 @@
+{
+  "name": "jscodeshift-demos",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lund0n/jscodeshift-demos.git"
+  },
+  "homepage": "https://github.com/lund0n/jscodeshift-demos#readme",
+  "main": "index.js",
+  "scripts": {
+    "format": "turbo run format",
+    "test": "turbo run test"
+  },
+  "keywords": [
+    "codemod",
+    "jscodeshift"
+  ],
+  "author": "Jeremy Lund <jeremy.r.lund@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier-config": "workspace:*",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "turbo": "^1.6.3"
+  },
+  "packageManager": "pnpm@7.18.0",
+  "prettier": "prettier-config"
+}

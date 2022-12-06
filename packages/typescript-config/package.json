@@ -1,0 +1,26 @@
+{
+  "name": "typescript-config",
+  "version": "0.0.0",
+  "description": "TypeScript config",
+  "main": "tsconfig.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lund0n/jscodeshift-demos.git",
+    "directory": "packages/typescript-config"
+  },
+  "bugs": "https://github.com/lund0n/jscodeshift-demos/issues",
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Jeremy Lund <jeremy.r.lund@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --ignore-unknown --write ."
+  },
+  "devDependencies": {
+    "prettier-config": "workspace:*",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0"
+  },
+  "prettier": "prettier-config"
+}
