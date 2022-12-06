@@ -21,7 +21,7 @@
     "example-3": "pnpm transform -- -t ../packages/transforms/src/rename-function-id.ts src/multiple-fns.js",
     "example-4": "pnpm transform -- -t ../packages/transforms/src/import-rename.ts src/imports.js",
     "example-5": "pnpm transform -- -t ../packages/transforms/src/brace-yourselves.ts src/decisions.js",
-    "example-6": "pnpm transform -- -t https://raw.githubusercontent.com/lund0n/jscodeshift-examples/master/transforms/brace-yourselves.js src/decisions.js",
+    "example-6": "pnpm transform -- -t https://raw.githubusercontent.com/lund0n/jscodeshift-demos/main/packages/transforms/src/brace-yourselves.ts src/decisions.js",
     "format": "prettier --ignore-unknown --write ."
   },
   "peerDependencies": {
